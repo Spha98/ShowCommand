@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void main(void)
+{
+	long sum = 1L;
+	int i = 1;   /*Outer loop control variable*/
+	int j = 1;   /*Inner loop control variables*/
+	int count = 10;  /* Number of sums to be calculated*/
+
+	for (i =1 ; i <= count ; i++)
+	{
+	sum = 1L; /*Initialize sum for the inner loop*/
+	j =1;	/* initialize integer to be added*/
+	 
+	 /*Calculate sum of integers from 1 to i*/
+	 while(j < i)
+	 {
+	 sum += ++j;
+	 printf("+d%", j);
+	 }
+	 printf("%ld\n", sum);
+	}
+}
