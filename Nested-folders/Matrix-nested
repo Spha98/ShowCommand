@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void main(void)
+{
+	int i = 0;
+	do 
+	{
+	int j =0;
+		do
+		{
+		printf("(%d, %d)", i, j);
+		j++;
+		}
+		while (j < 2)
+		{
+		i++;
+		printf("\n");
+		}
+	} while (i < 2)
+	return (0);
+}
